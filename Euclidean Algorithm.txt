@@ -1,0 +1,17 @@
+#Euclidean Algorithm for finding the GCD of two integers
+x = int(input("Enter the first number: "))
+y = int(input("Enter the second number: "))
+m = x
+n = y
+x = abs(x)
+y = abs(y)
+
+while y != 0:
+	r = x % y
+	x = y
+	y = r
+	
+if x==y==0:
+	print("The GCD of is not defined.")
+else:
+	print(f"The GCD of {m} and {n} is:{x}.")
